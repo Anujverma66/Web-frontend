@@ -1,0 +1,809 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Grand+Hotel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Borel&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stalemate&display=swap');
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(181, 17, 17) rgba(229, 221, 221, 0.705);
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: poppins;
+}
+
+
+header {
+    background-color: rgb(255, 255, 255);
+    border-bottom: 1px solid rgb(233, 145, 13);
+    display: flex;
+    align-items: center;
+    height: 110px;
+    justify-content:space-around;
+    /* background-color: rgb(186, 186, 208); */
+}
+
+
+
+
+header .logo {
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+header .logo img {
+    width: 70px;
+    height: 70px;
+}
+
+header .logo h2 {
+    font-size: 32px;
+    padding-left: 15px;
+
+    font-weight: 600;
+    color: #eea806;
+    font-family: poppins;
+}
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.menu #menu-close-button{
+    display:none;
+}
+
+.menu{
+    display: flex; 
+   
+}
+ .menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    position: relative;
+    top: 5px;
+    list-style: none;
+    /* background-color: brown; */
+}
+
+
+
+ .menu li a {
+    width: auto;
+    word-wrap: break-word;
+    color: rgb(181, 17, 17);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 16px;
+    font-family: poppins;
+}
+
+
+.nav li a:hover {
+    border-bottom: 3px solid rgb(233, 145, 13);
+}
+
+.nav .srchimg {
+    font-size: 28px;
+    cursor: pointer;
+    margin: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.nav #menu-open-button{
+    display:none;
+}
+
+.nav .profile {
+    font-size: 26px;
+    margin: 0 7px;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    border: 3px solid rgb(181, 17, 17);
+}
+
+
+
+
+.main {
+
+    display: flex;
+    height: 665px;
+    width: 100%;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+
+}
+
+.contbox {
+    width: 83%;
+    position: relative;
+    top: 100px;
+    left: 55px;
+    height: 600px;
+}
+
+.content h1 {
+    font-weight: 800;
+
+    font-size: 90px;
+    font-family: 'poppins', sans-serif;
+    color: rgb(255, 123, 0);
+
+}
+
+.content h3 {
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 36px;
+    padding: 4px;
+    color: rgb(181, 17, 17);
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: Animations .4s .7s ease-in-out 1 forwards;
+    animation-delay: .8s;
+}
+
+.content p {
+    font-style: italic;
+    font-size: 22px;
+
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif, cursive;
+    color: rgb(181, 17, 17);
+
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: Animations .4s .7s ease-in-out 1 forwards;
+    animation-delay: 1s;
+}
+
+@keyframes Animations {
+    to {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+    }
+
+}
+
+.content h1 {
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: Animations .4s .7s ease-in-out 1 forwards;
+}
+
+/* Visit button  */
+
+.content .visitbtn {
+    transform: translateY(30px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: Animations .4s .7s ease-in-out 1 forwards;
+    animation-delay: 1.2s;
+    cursor: pointer;
+    border-radius: 25px;
+    color: orangered;
+    font-weight: 600;
+    font-family: poppins;
+    font-size: 18px;
+    border: 3px solid orangered;
+    position: relative;
+    left: 100px;
+    height: 52px;
+    top: 48px;
+    width: 180px;
+
+}
+
+.visitbtn:hover {
+    background-color: rgb(249, 101, 48);
+    color: rgb(89, 2, 2);
+}
+
+.content2 {
+
+    overflow: hidden;
+    width: 50%;
+}
+
+.content2 .chakra {
+    position: relative;
+    left: 60px;
+    opacity: .8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 650px;
+    width: 650px;
+    /* background-color: #E8D033; */
+    filter: blur(3px);
+    animation: buttonanim 1.3s .7s ease-out 1 forwards;
+    animation: rotation 100s linear infinite forwards;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(360deg);
+    }
+
+}
+
+.content2 .slider {
+    position: relative;
+    left: 225px;
+    bottom: 500px;
+    border-radius: 32px;
+    filter: blur(6px);
+    opacity: 0;
+    animation: buttonanim .6s .4s ease-in-out 1 forwards;
+    display: flex;
+    background-position: center;
+    background-size: cover;
+    box-shadow: 0 0 24px rgb(181, 17, 17);
+    height: 350px;
+    width: 330px;
+}
+
+.slider .list .items {
+    overflow: hidden;
+    position: absolute;
+    inset: 0 0 0 0;
+    opacity: 0;
+    transition: 0.5s;
+}
+
+
+.slider .list .items img {
+    border-radius: 32px;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+}
+
+.slider .list .items.active {
+    opacity: 1;
+    z-index: 10;
+}
+
+.slider .list .items::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.content2 .sliderbutton {
+    font-size: 40px;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 385px;
+    left: 0px;
+    width: 370px;
+    height: 52px;
+}
+
+@keyframes buttonanim {
+    to {
+        transform: translateX(0);
+        filter: blur(0);
+        opacity: 1;
+
+    }
+
+}
+
+.content2 .sliderbutton .slbtn {
+    border: 3px solid orangered;
+    color: orangered;
+    font-size: 40px;
+    font-weight: 600;
+    padding-bottom: 8px;
+    cursor: pointer;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+}
+
+.content2 .sliderbutton .rightbtn {
+    transform: translatex(200px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: buttonanim .4s .7s ease-in-out 1 forwards;
+    cursor: pointer;
+}
+
+.content2 .sliderbutton .leftbtn {
+    transform: translatex(-200px);
+    filter: blur(10px);
+    opacity: 0;
+    animation: buttonanim .4s .7s ease-in-out 1 forwards;
+    cursor: pointer;
+}
+
+.sliderbutton .rightbtn:hover {
+    color: black;
+    background-color: orange;
+
+}
+
+.sliderbutton .leftbtn:hover {
+    color: black;
+    background-color: orange;
+
+}
+
+.Third-Section {
+    display: flex;
+    justify-content: center;
+    height: 900px;
+    width: 100%;
+    border-top: 2px solid rgb(115, 28, 12);
+}
+
+.Third-Section .G-contain {
+    display: grid;
+    grid-template-areas: "G-boxes G-boxes G-boxes G-boxes G-boxes"
+        "G-boxes G-boxes G-boxes G-boxes G-boxes";
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(228, 226, 108);
+    width: 100%;
+    height: 78%;
+    margin: auto;
+}
+
+.G-contain .G-boxes {
+    width: 200px;
+    height: 150px;
+    column-gap: 30px;
+    background-color: rgb(50, 92, 219);
+
+}
+
+.G-boxes .gb-1 {
+
+    grid-area: G-boxes;
+
+
+}
+
+.poster {
+
+    border-top: 5px solid rgba(26, 10, 7, 0.41);
+    height: 790px;
+    width: 100%;
+    background-image: radial-gradient(rgba(173, 29, 29, 0.756), rgb(208, 27, 27));
+
+}
+
+.model {
+    height: 480px;
+    position: relative;
+    top: 179px;
+    left: 482px;
+    width: 425px;
+
+}
+
+.model img {
+    width: 435px;
+}
+
+.space {
+    height: 100%;
+    width: 92%;
+    margin: auto;
+    /* background-color: aqua; */
+}
+
+.ftlogo {
+    height: 60px;
+
+    display: flex;
+    align-content: center;
+    align-items: center;
+}
+
+.ftlogo a {
+    font-size: 24px;
+    font-weight: 700;
+    color: #ffd000;
+    text-decoration: none;
+}
+
+
+.gallarybox {
+    border-top: 3px solid rgb(214, 40, 40);
+    border-bottom: 3px solid rgb(214, 40, 40);
+    height: 840px;
+    width: 100%;
+    /* background-color: rgb(214, 40, 40) ; */
+}
+
+.headingbox {
+    padding: 30px 20px;
+    height: 150px;
+}
+
+.headingbox h2 {
+    color: rgb(214, 40, 40);
+    font-size: 55px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headingbox h3 {
+    color: rgb(214, 40, 40);
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.outbox {
+    padding-top: 50px;
+    height: 100%;
+    width: 100%;
+}
+
+.outbox .prboxes {
+
+    display: grid;
+    justify-content: space-around;
+    grid-template-areas: "product product product product"
+        "product product product product";
+    height: 75%;
+    width: 87%;
+    margin: auto;
+}
+
+.product {
+
+    border: 3px solid orangered;
+    cursor: pointer;
+    width: 200px;
+    height: 200px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    box-shadow: 0 0 15px;
+    transition: transform .3s ease-in-out;
+}
+
+.product:hover {
+    transform: scale(1.2);
+    border-radius: 50px;
+
+}
+
+
+/* view btn  */
+.prboxes .product .viewbtn {
+
+    background-color: whitesmoke;
+    cursor: pointer;
+    box-shadow: 0 0 15px rgb(234, 7, 7);
+    font-size: larger;
+    font-weight: 700;
+    border: 2px solid black;
+    border-radius: 25px;
+    width: 100px;
+    height: 40px;
+    position: relative;
+    top: 180px;
+    left: 52px;
+}
+
+.product .viewbtn:hover {
+
+    box-shadow: 0 0 15px rgb(234, 230, 7);
+    background-color: rgb(234, 7, 7);
+
+}
+
+/* cart box */
+.prboxes .product .addcart {
+    /* backdrop-filter:blur(16px); */
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    position: relative;
+    left: 150px;
+    top: 90px;
+    display: block;
+    opacity: 0;
+    height: 40px;
+    width: 40px;
+    border-radius: 50px;
+    border: 2px solid black;
+    box-shadow: 0 0 15px rgb(242, 21, 21);
+
+
+}
+
+.product .addcart:hover {
+
+    background-color: rgb(242, 21, 21);
+    box-shadow: 0 0 15px rgb(234, 230, 7);
+    background-color: rgb(234, 7, 7);
+}
+
+.product:hover .addcart {
+
+    opacity: 1;
+
+}
+
+
+.addcart img {
+    padding: 10px 8px 7px 6px;
+    width: 27px;
+}
+
+.lastbox {
+    height: 225px;
+    width: 100%;
+}
+
+.thankbox {
+
+    font-weight: 100;
+    text-align: center;
+    color: rgb(255, 0, 0);
+    padding: 70px 0;
+
+    font-size: 35px;
+}
+
+footer {
+
+    height: 558px;
+    width: 100%;
+    /* background-color:gold; */
+}
+
+.footmenu {
+
+    display: grid;
+    grid-template-areas: "first second third";
+    column-gap: 100px;
+    justify-content: center;
+    align-items: center;
+    height: 170px;
+    /* background-color: aqua; */
+
+}
+
+.footmenu a {
+    font-size: 18px;
+    text-decoration: none;
+    font-weight: 500;
+    color: rgba(126, 8, 8, 0.953);
+}
+
+.footmenu a:hover {
+    color: red;
+}
+
+.callbox {
+    color: rgba(126, 8, 8, 0.953);
+    display: flex;
+    padding: 0 100px;
+    height: 150px;
+    align-items: center;
+    /* background-color: #E8D033; */
+}
+
+.callbox h2 {
+    font-size: 16px;
+}
+
+.name {
+    border-top: 3px solid rgb(214, 40, 40);
+    color: rgb(255, 191, 0);
+    filter: drop-shadow(12px 9px 15px rgba(183, 255, 0, 0.856));
+    font-size: 22px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+
+}
+
+.lastline {
+    font-family: borel;
+    font-size: 16px;
+    color: rgb(126, 8, 8);
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 72px;
+}
+
+@media screen and (max-width: 1200px) {
+
+
+    .headingbox {
+        padding: 40px 40px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .main {
+        height: auto;
+        flex-direction: column;
+    }
+
+    
+     
+    .nav  #menu-open-button{
+        cursor: pointer;
+        margin-left: 25px;
+        font-size:30px;
+        border: none;
+        background: transparent;
+        display: block;
+    }
+
+    .menu #menu-close-button { 
+        font-size: 22px;
+        display: block;
+        align-items: center;
+        border: none;
+        background: transparent;
+        cursor: pointer;
+        position: relative;
+        bottom: 100px;
+        left: 90px;
+    }
+
+     .nav .menu {
+        position: fixed;
+        display:block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 20px;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        flex-direction: column;
+        background-color: rgb(60, 152, 233);
+        z-index: 10;
+        transition: left .2s ease;
+       
+    }
+    .menu ul{
+        height:400px;
+        display: block;
+       
+    }
+    .body.show-mobile-menu .nav .menu{
+        left:0;
+    }
+
+    .menu li{
+        height: 100px;
+        text-align: center;
+        margin-top: 0px;
+        font-weight: 800;
+    }
+    .menu li a{
+        
+        font-size: 23px;
+
+    }
+
+    .content {
+        height: 50%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contbox {
+        padding: 0 30px;
+        width: 100%;
+        left: 0;
+    }
+
+    .contbox .visitbtn {
+        left: 0;
+        position: relative;
+
+    }
+
+    .content2 {
+        margin-top: 50px;
+        width: 100%;
+        height: 50%;
+    }
+
+    .content2 .chakra {
+        left: 0;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+
+    }
+
+    .outbox .prboxes {
+        grid-template-areas: "product product"
+            "product product"
+            "product product"
+            "product product";
+        row-gap: 50px;
+        width: 90%;
+    }
+
+    .callbox {
+        flex-direction: column;
+        text-align: center;
+        height: auto;
+        gap: 10px;
+    }
+
+    .poster {
+        height: 820px;
+    }
+
+    .model {
+        left: 0;
+        top: 100px;
+        margin: auto;
+    }
+
+
+    .gallarybox {
+        height: 1500px;
+    }
+
+    .lastbox {
+        padding: 0;
+        height: 300px;
+    }
+
+    .thankbox {
+        font-size: 20px;
+    }
+
+    footer {
+        height: 500px;
+
+    }
+
+}
